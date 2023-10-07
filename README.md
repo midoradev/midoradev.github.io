@@ -1,8 +1,10 @@
-# React + Vite
+# [midoradev.github.io](https://midoradev.github.io)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This website created by midora
 
-Currently, two official plugins are available:
+Code licensed under the [MIT License](https://github.com/midoradev/midoradev.github.io/blob/main/LICENSE)
 
+Website create with:
+
+- [Vitejs](https://vitejs.dev)
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
