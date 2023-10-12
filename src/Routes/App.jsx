@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
-import "./App.css";
+import Avatar from "/midora.svg";
+import Navbar from "./Navbar.jsx";
+import "../Style/App.css";
 
 function App() {
-  const [avatarSrc, setAvatarSrc] = useState("apple-touch-icon.png");
+  const [avatarSrc, setAvatarSrc] = useState(Avatar);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -43,7 +45,7 @@ function App() {
       .finally(() => {
         setTimeout(() => {
           setLoading(false);
-        }, 2000);
+        }, 500);
       });
   };
 
@@ -54,6 +56,7 @@ function App() {
           <div className="spinner"></div>
         </div>
       )}
+      <Navbar />
       <div className="profile-card">
         <div className="card-header">
           <div className="pic">
@@ -74,7 +77,7 @@ function App() {
             </a>
           </div>
           <div className="desc">
-            Seft-taught <span className="green">Programmer</span>
+            Seft-taught <span className="programmer-text">Programmer</span>
           </div>
           <div className="sm">
             <a
