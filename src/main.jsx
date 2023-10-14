@@ -12,28 +12,28 @@ import "./Style/index.css";
 
 const router = createBrowserRouter([
   {
-    path: "/#/",
+    path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/#/project",
+    path: "/project",
     element: <Project />,
   },
   {
-    path: "/#/terms",
+    path: "/terms",
     element: <Terms />,
   },
   {
-    path: "/#/refunds",
+    path: "/refunds",
     element: <Refunds />,
   },
   {
-    path: "/#/privacy/starsky",
+    path: "/privacy/starsky",
     element: <PrivacyStarsky />,
   },
   {
-    path: "/#/privacy/wordlebot",
+    path: "/privacy/wordlebot",
     element: <PrivacyWordleBot />,
   },
 ]);
