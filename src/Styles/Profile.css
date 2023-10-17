@@ -1,0 +1,104 @@
+/* Profile.css */
+.profile-container {
+  background-color: #333;
+  background-size: cover;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column; /* Change to a single column layout for smaller screens */
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  padding: 20px;
+}
+
+
+.about-card,
+.contact-card {
+  width: 100%; /* Full width for smaller screens */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .profile-content {
+    flex-direction: row; /* Return to a two-column layout for screens wider than 768px */
+    background-color: #181818;
+  }
+
+  .about-card,
+  .contact-card {
+    width: 48%;
+    margin: 1%; /* Add margin for spacing between cards */
+  }
+}
+
+h2 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: whitesmoke;
+  margin: 15px 0;
+}
+
+form {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+  color: whitesmoke;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-height: 60px; /* Set the minimum height */
+  max-width: 100%; /* Set the maximum width */
+  min-width: 100%; /* Set the minimum width */
+}
+
+button {
+  background-color: #fff;
+  color: #181818;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Style the button on hover */
+button:hover {
+  background-color: #be97c2;
+  color: #fff;
+}

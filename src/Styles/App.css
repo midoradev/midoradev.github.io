@@ -1,3 +1,37 @@
+.maincontent {
+  height: 100vh;
+  background-color: #181818;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  z-index: 1000;
+  width: 100%;
+}
+
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  margin: 0 20px;
+}
+
+.nav-link:hover {
+  color: #be97c2;
+}
+
 .profile-card {
   width: 400px;
   text-align: center;
@@ -16,6 +50,7 @@
   border-radius: 50%;
   background-size: 200% 200%;
   animation: animated-gradient 2s linear infinite;
+  text-decoration: none;
 }
 
 .shorticon {
@@ -92,6 +127,7 @@
   color: #f2f2f2;
   width: 56px;
   font-size: 22px;
+  text-decoration: none;
 }
 
 .sm a:hover {
