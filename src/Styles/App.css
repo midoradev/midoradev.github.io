@@ -1,6 +1,6 @@
 .maincontent {
   height: 100vh;
-  background-color: #181818;
+  background-color: #000;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -8,72 +8,40 @@
   box-sizing: border-box;
 }
 
-.navbar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-  z-index: 1000;
-  width: 100%;
-}
-
-
-.nav-link {
-  text-decoration: none;
-  color: white;
-  margin: 0 20px;
-}
-
-.nav-link:hover {
-  color: #be97c2;
-}
-
 .profile-card {
   width: 400px;
   text-align: center;
   border-radius: 8px;
   overflow: hidden;
+  display: flex;
 }
 
 .card-header {
   padding: 60px 40px;
 }
 
+.card {
+  display: flex;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  margin-right: 25px;
+}
+
 .pic {
   display: inline-block;
-  padding: 8px;
+  padding: 7px;
   margin: auto;
   border-radius: 50%;
-  background-size: 200% 200%;
-  animation: animated-gradient 2s linear infinite;
-  text-decoration: none;
-}
-
-.shorticon {
-  border-radius: 50%;
-}
-
-.programmer-text {
-  /* color: rgb(175, 214, 155); */
-  color: #be97c2;
-}
-
-.red {
-  color: rgb(214, 155, 155);
-}
-
-.yellow {
-  color: rgb(210, 214, 155);
 }
 
 .pic img {
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
 }
 
@@ -81,34 +49,6 @@
   font-size: 28px;
   font-weight: 600;
   margin: 5px 0;
-}
-
-.name a {
-  color: #f2f2f2;
-}
-
-.name .m {
-  color: #ffcaca;
-}
-
-.name .i {
-  color: #ffd7a6;
-}
-
-.name .d {
-  color: #feffb8;
-}
-
-.name .o {
-  color: #c4ffcb;
-}
-
-.name .r {
-  color: #c8e5ff;
-}
-
-.name .a {
-  color: #cc99c9;
 }
 
 .desc {

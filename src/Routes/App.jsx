@@ -1,25 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Avatar from "/midora.svg";
 import "../Styles/App.css";
-import Profile from "./Profile.jsx";
 
 function App() {
   const [avatarSrc, setAvatarSrc] = useState(Avatar);
   const [loading, setLoading] = useState(true);
-
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      window.scrollTo({
-        top: section.offsetTop,
-        behavior: "smooth",
-      });
-    }
-  };
-
-  const handleNavLinkClick = (sectionId) => {
-    scrollToSection(sectionId);
-  };
 
   const fetchData = () => {
     fetch("https://api.lanyard.rest/v1/users/897838071922446466")
@@ -71,43 +56,40 @@ function App() {
             <div className="spinner"></div>
           </div>
         )}
-        <div className="navbar">
-          <a onClick={() => handleNavLinkClick("profile")} className="nav-link">
-            Profile
-          </a>
-          <a onClick={() => handleNavLinkClick("service")} className="nav-link">
-            Service
-          </a>
-          <a href={`/blog`} className="nav-link">
-            Blog
-          </a>
-        </div>
         <div className="profile-card">
           <div className="card-header">
-            <div className="pic">
-              <img src={avatarSrc} alt="avatar" id="avatar-img" />
+            <div className="card">
+              {" "}
+              <div className="pic">
+                <img src={avatarSrc} alt="avatar" id="avatar-img" />
+              </div>
+              <div className="card2">
+                <div className="name">
+                  <a
+                    href="https://discord.com/users/897838071922446466"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    <span style={{ color: "#ffcaca" }}>m</span>
+                    <span style={{ color: "#ffd7a6" }}>i</span>
+                    <span style={{ color: "#feffb8" }}>d</span>
+                    <span style={{ color: "#c4ffcb" }}>o</span>
+                    <span style={{ color: "#c8e5ff" }}>r</span>
+                    <span style={{ color: "#cc99c9" }}>a</span>
+                    <span style={{ color: "#fff" }}>#3234</span>
+                  </a>
+                </div>
+                <div className="desc">
+                  Seft-taught{" "}
+                  <span style={{ color: "#be97c2" }}>Programmer</span>
+                </div>
+              </div>
             </div>
-            <div className="name">
-              <a
-                href="https://discord.com/users/897838071922446466"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                <span className="m">m</span>
-                <span className="i">i</span>
-                <span className="d">d</span>
-                <span className="o">o</span>
-                <span className="r">r</span>
-                <span className="a">a</span>#3234
-              </a>
-            </div>
-            <div className="desc">
-              Seft-taught <span className="programmer-text">Programmer</span>
-            </div>
+
             <div className="sm">
               <a
                 href="https://twitter.com/midoradev"
-                class="fab fa-twitter"
+                className="fab fa-twitter"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
@@ -115,7 +97,7 @@ function App() {
               </a>
               <a
                 href="https://github.com/midoradev"
-                class="fab fa-github"
+                className="fab fa-github"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
@@ -123,7 +105,7 @@ function App() {
               </a>
               <a
                 href="https://www.youtube.com/@midora28"
-                class="fab fa-youtube"
+                className="fab fa-youtube"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
@@ -131,7 +113,7 @@ function App() {
               </a>
               <a
                 href="https://discord.gg/pVXYFzX58B"
-                class="fab fa-discord"
+                className="fab fa-discord"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
@@ -139,7 +121,15 @@ function App() {
               </a>
               <a
                 href="https://www.buymeacoffee.com/midora"
-                class="fas fa-coffee"
+                className="fas fa-coffee"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                {" "}
+              </a>
+              <a
+                href="mailto:noreply.notmythdora@gmail.com"
+                className="fa-solid fa-envelope"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
@@ -149,7 +139,6 @@ function App() {
           </div>
         </div>
       </div>
-      <Profile />
     </div>
   );
 }
