@@ -1,8 +1,8 @@
-# [midoradev.github.io](https://midoradev.github.io)
+# [yklucz.github.io](https://yklucz.github.io)
 
-#### This website created by 7ncvz
+#### This website created by yklucz
 
-Code licensed under the [MIT License](https://github.com/midoradev/midoradev.github.io/blob/main/LICENSE)
+Code licensed under the [MIT License](https://github.com/yklucz/yklucz.github.io/blob/main/LICENSE)
 
 
 # Website create with:
